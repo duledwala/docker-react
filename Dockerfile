@@ -1,7 +1,7 @@
 FROM node:alpine as builder
 WORKDIR '/app'
 COPY package.json .
-# Install some dependecies
+
 RUN npm install
 COPY . .
 RUN npm run build
